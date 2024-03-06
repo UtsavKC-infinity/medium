@@ -17,7 +17,7 @@ export const useBlog = () => {
    }
 
    axios
-     .get(`http://127.0.0.1:8787/api/v1/blog/bulk`, {
+     .get(`${BACKEND_URL}/api/v1/blog/bulk`, {
        headers: {
          Authorization: token,
        },
